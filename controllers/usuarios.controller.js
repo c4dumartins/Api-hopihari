@@ -68,7 +68,7 @@ exports.login = async (req, res) => {
             return res.status(401).send({ "Mensagem": "Usuário não cadastrado" });
         }
 
-        const match = await bcrypt.compare(usuario[0].password, req.body.password);
+        const match = await bcrypt.compare(req.body.password, usuario[0].password);
         console.log(match, req.body.password, usuario[0].password);
         if (!match) {
             return res.status(401).send({ "Mensagem": "Senha incorreta" });
