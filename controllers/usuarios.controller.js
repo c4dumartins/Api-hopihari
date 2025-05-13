@@ -43,6 +43,8 @@ exports.cadastrarUsuarios = async (req, res) => {
                req.body.phone 
             ]
         );
+        console.log(hash)
+
           
         return res.status(201).send({
             "Mensagem": "Usuário cadastrado com sucesso",
