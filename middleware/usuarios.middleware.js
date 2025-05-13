@@ -14,7 +14,7 @@ exports.required = async (req, res, next) => {
             return res.status(401).send({"Mensagem": "Usuario não autenticado"});
         }
     } catch (error) {
-        return res.status(500).send({"error": erro.message});
+        return res.status(500).send(error);
     }
 }
 

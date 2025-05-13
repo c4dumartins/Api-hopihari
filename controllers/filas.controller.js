@@ -8,7 +8,7 @@ exports.entrarFila = async (req, res, next) => {
             `, [res.locals.idUsuario, req.params.idRide]);
             return res.status(201).send({"Mensagens": resultados});
     } catch (error) {
-        return res.status(500).send({"Mensagem": error});
+        return res.status(500).send(error);
     }
 }
 
