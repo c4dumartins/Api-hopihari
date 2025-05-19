@@ -11,7 +11,7 @@ VALUES  ("Trem Fantasma", 5, "aberto", "1"),
         ("Roda Gigante", 3, "aberto", "3");
 
 INSERT INTO `lines` (id_ride, id_user)
-VALUES  (8, 10),
+VALUES  (8, 10), 
         (8, 11),
         (9, 11),
         (9, 12),

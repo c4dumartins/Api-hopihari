@@ -8,6 +8,8 @@ router.post("/:idRide",
     filaController.verificarBrinquedo,
     filaController.entrarFila 
 );
+
+
   
 
 module.exports = router;clearImmediate

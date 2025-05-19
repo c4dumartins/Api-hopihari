@@ -8,7 +8,7 @@ exports.required = async (req, res, next) => {
         const decode = jwt.decode(token, "senhadojwt");
 
         if (decode.id) {
-            res.locals.idUsuario = id;
+            res.locals.idUsuario = decode.id;
             next();
         } else {
             return res.status(401).send({"Mensagem": "Usuario não autenticado"});
