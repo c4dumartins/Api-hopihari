@@ -9,7 +9,4 @@ router.post("/:idRide",
     filaController.entrarFila 
 );
 
-
-  
-
 module.exports = router;clearImmediate
